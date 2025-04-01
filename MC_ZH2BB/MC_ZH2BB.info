@@ -1,0 +1,22 @@
+Name: MC_ZH2BB
+Summary: MC boosted ZH2bb validation plots
+Collider: LHC
+Status: VALIDATED
+Reentrant: true
+Authors:
+ - Ben Smart <bsmart@cern.ch>
+ - Andy Buckley <andy.buckley@cern.ch>
+RunInfo:
+  $ZH$ with $H \to b \bar{b}$ and the z boson decaying to neutrinos
+NumEvents: 100000
+PtCuts: [0]
+Description:
+  'Various plots for characterising the process $V H \to b\bar{b}$'
+NeedCrossSection: yes
+Options:
+ - antikt=0.3,0.4,0.5,0.6,0.8,1.0
+ - Zptcut=400,700,1000,1300,1600,2200,2800,3400,4000,4600,5200
+ReleaseTests:
+ - $A LHC-WH
+ - $A-2 LHC-ZH
+
